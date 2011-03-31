@@ -174,7 +174,6 @@ class CIJoe
           {}
         end
 
-      ENV.clear
       data.each{ |k, v| ENV[k] = v }
       `cd #{@project_path} && sh #{file}`
     end
